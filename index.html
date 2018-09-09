@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="js/datepicker/daterangepicker.css" />
+</head>
+<body>
+<header id="home-picture">
+    <div class="wrapper">
+        <div class="europa-logo">
+            <img src="images/Group%204%20Copy%203@2x.png" alt="europa-logo">
+        </div>
+        <div id="side">
+            <div class="navigation">
+                <nav>
+                    <ul>
+                        <li><a href="#">Rooms</a></li>
+                        <li><a href="#">Restaurant</a></li>
+                        <li><a href="#">Conference Rooms</a></li>
+                        <li><a href="contacts.html">Contacts</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="side-buttons">
+                <div class="language-select">
+                    <div id="current-lang">
+                        <span id="cur-lang-value">ENG</span>
+                        <img id="upper-arrow" src="images/icons/down-chevron-copy-3@1x.svg" alt="arrow"/>
+                    </div>
+                    <div class="dropdown">
+                        <img id="lower-arrow" src="images/icons/Rectangle%202@2x%20-white.svg" alt="arrow-rect">
+                        <div id="languages">
+                            <p class="lang-selection selected" data-value="ENG">English</p>
+                            <p class="lang-selection" data-value="LTU">Lithuanian</p>
+                            <p class="lang-selection" data-value="RUS">Russian</p>
+                        </div>
+                    </div>
+                </div>
+                <a id="booking_btn" href="#">Book now</a>
+            </div>
+            <div class="responsive-navigation">
+                <div class="hamburger">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <div class="mobile-menu">
+                    <div class="top">
+                        <img src="images/ECV_logo_white@2x.png" alt="logo">
+                    </div>
+                    <nav class="navigation-mobile">
+                        <ul>
+                            <li><a href="#">Rooms</a></li>
+                                <li><a href="#">Restaurant</a></li>
+                                <li><a href="#">Conference Rooms</a></li>
+                                <li><a href="contacts.html">Contacts</a></li>
+                        </ul>
+                    </nav>
+                    <div class="find-us">
+                        <p class="title">Find us</p>
+                        <nav class="navigation-find-us">
+                            <ul>
+                                <li><a href="#">TripAdvisor</a></li>
+                                <li><a href="#">Facebook</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="languages">
+                        <p class="title">Languages</p>
+                        <nav class="languages-select">
+                            <ul>
+                                <li class="mobile-lang-option active" value="ENG"><a href="#">EN</a></li>
+                                <li class="mobile-lang-option" value="LTU"><a href="#">LT</a></li>
+                                <li class="mobile-lang-option" value="RUS"><a href="#">RU</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="paddings">
+            <div class="hotel-booking">
+                <div class="booking-info">
+                    <p id="check-info">Check room availability and rates and book online</p>
+                    <div class="selections-container">
+                        <div class="check-in">
+                            <p class="top-paragraph">Check in</p>
+                            <div class="date-picker-check-in">
+                                <input type="number" min="1" max="31" value="" id="todays-date" class="day" readonly/>
+                                <div class="month-and-selector">
+                                    <p id="current-month" class="month"></p>
+                                    <img src="images/icons/down-chevron@1x.svg" alt="down-chevron">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="check-out">
+                            <p class="top-paragraph">Check out</p>
+                            <div class="date-picker-check-out">
+                                <input type="number" min="1" max="31" value="" id="checkout-date" class="day" readonly/>
+                                <div class="month-and-selector">
+                                    <p id="checkout-month" class="month"></p>
+                                    <img src="images/icons/down-chevron@1x.svg" alt="down-chevron">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="no-of-guests">
+                            <p class="top-paragraph guests-selector">Guests</p>
+                            <div class="guest-selector">
+                                <input type="number" min="1" value="01" id="guests-count" readonly/>
+                                <div class="arrow-selectors">
+                                    <div id="guest-arrow-up">
+                                        <img src="images/icons/down-chevron copy 2@1x.svg" alt="down-chevron">
+                                    </div>
+                                    <div id="guest-arrow-down">
+                                        <img src="images/icons/down-chevron@1x.svg" alt="down-chevron">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a id="check-availability" href="#">Check availability</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section id="homepage-block-1">
+    <div class="wrapper">
+        <div class="title-line">
+            <h1 class="main-title">Why stay at Europa City Vilnius</h1>
+            <div class="line"></div>
+        </div>
+        <div class="content">
+            <div class="left-content content-style">
+                <p class="title">Location</p>
+                <img src="images/icons/luggage-1@1x.svg" alt="luggage">
+                <h2 class="topic-title">Vilnius - the gem of the Baltics</h2>
+                <p class="description">Namaskar, welcome to Incredible India, where culture echoes, tradition speaks, beauty enthralls and diversity delights.<br><br>
+                    Bounded by the majestic Himalayan ranges in the north and edged by an endless stretch of golden beaches, India is a vivid kaleidoscope of landscapes, magnificent historical sites and royal cities, misty mountain retreats, colorful people, rich cultures and festivities. The timeless mystery and beauty of India has been waiting for you for 5000 years, always warm and inviting, a place of infinite variety – one that favors you with different facets of its fascination every time you visit India.<br><br>
+                    Rich cultures and festivities. The timeless mystery and beauty of India has been waiting for you for 5000 years, always warm and inviting, a place of infinite variety – one that favors you with different facets of its fascination every time you visit India.</p>
+            </div>
+            <div class="right-content">
+                <div class="top-content content-style">
+                    <p class="title">Free parking</p>
+                    <div class="container">
+                        <div class="left-side">
+                            <img src="images/icons/bathtub%20copy%202@1x.svg" alt="bathtub">
+                            <h2 class="topic-title">Your safety and convenience is our priority</h2>
+                        </div>
+                        <p class="description">In the heart of the French Alps, in the north east of the Rhone Alps region lies the village of Les Houches. Nestled at one end of the Chamonix valley in the Mont Blanc region of the Haute Savoie. Alps region lies the village of Les Houches. Nestled at one end of the Chamonix valley in the Mont Blanc region.</p>
+                    </div>
+                </div>
+                <div class="bottom-content content-style">
+                    <p class="title">Conference Halls</p>
+                    <div class="container">
+                        <div class="left-side">
+                            <img src="images/icons/bathrobe@1x.svg" alt="bathrobe">
+                            <h2 class="topic-title">Take care of your business here</h2>
+                        </div>
+                        <p class="description">In the heart of the French Alps, in the north east of the Rhone Alps region lies the village of Les Houches. Nestled at one end of the Chamonix valley in the Mont Blanc region of the Haute Savoie. In the heart of the French Alps. In the heart of the French Alps, in the north east of the Rhone Alps region lies the village of Les Houches. Nestled at one end of the Chamonix valley in the Mont Blanc region.  In the heart of the French Alps. In the heart of the French Alps, in the north east of the Rhone Alps region lies the village.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="homepage-block-2">
+    <div class="flex-container">
+        <div class="left-side">
+            <div class="titles">
+                <p class="title">The best of our rooms at</p>
+                <div class="title-line">
+                    <h3 class="main-title">Europa City Vilnius</h3>
+                    <div class="line"></div>
+                </div>
+            </div>
+            <div class="overflow-content">
+                <div class="room selected">
+                    <div class="left-border"></div>
+                    <div class="single-block">
+                        <div class="img-wrap">
+                            <img src="images/17417099.jpg" alt="room-photo">
+                        </div>
+                        <div class="room-info">
+                            <h4 class="room-title">Business double or twin room</h4>
+                            <div class="specifics">
+                                <div class="room-guest-info">
+                                    <div class="room-size">
+                                        <p class="size">Room size</p>
+                                        <span class="dimensions">25m<sup>2</sup></span>
+                                    </div>
+                                    <div class="guests-info">
+                                        <p class="guests">Guests</p>
+                                        <span class="no-of-guest">02</span>
+                                    </div>
+                                </div>
+                                <div class="additional-info">
+                                    <a href="#" class="read-more">Read more</a>
+                                    <img src="images/icons/down-chevron%20copy%208@1x.svg" alt="arrow-right">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="room">
+                    <div class="left-border"></div>
+                    <div class="single-block">
+                        <div class="img-wrap">
+                            <img src="images/17417007.jpg" alt="room-photo">
+                        </div>
+                        <div class="room-info">
+                            <h4 class="room-title">Deluxe double or twin room</h4>
+                            <div class="specifics">
+                                <div class="room-guest-info">
+                                    <div class="room-size">
+                                        <p class="size">Room size</p>
+                                        <span class="dimensions">25m<sup>2</sup></span>
+                                    </div>
+                                    <div class="guests-info">
+                                        <p class="guests">Guests</p>
+                                        <span class="no-of-guest">02</span>
+                                    </div>
+                                </div>
+                                <div class="additional-info">
+                                    <a href="#" class="read-more">Read more</a>
+                                    <img src="images/icons/down-chevron%20copy%208@1x.svg" alt="arrow-right">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="room">
+                    <div class="left-border"></div>
+                    <div class="single-block">
+                        <div class="img-wrap">
+                            <img src="images/17416983.jpg" alt="room-photo">
+                        </div>
+                        <div class="room-info">
+                            <h4 class="room-title">Suite</h4>
+                            <div class="specifics">
+                                <div class="room-guest-info">
+                                    <div class="room-size">
+                                        <p class="size">Room size</p>
+                                        <span class="dimensions">25m<sup>2</sup></span>
+                                    </div>
+                                    <div class="guests-info">
+                                        <p class="guests">Guests</p>
+                                        <span class="no-of-guest">02</span>
+                                    </div>
+                                </div>
+                                <div class="additional-info">
+                                    <a href="#" class="read-more">Read more</a>
+                                    <img src="images/icons/down-chevron%20copy%208@1x.svg" alt="arrow-right">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="room">
+                    <div class="left-border"></div>
+                    <div class="single-block">
+                        <div class="img-wrap">
+                            <img src="images/17417254.jpg" alt="room-photo">
+                        </div>
+                        <div class="room-info">
+                            <h4 class="room-title">Standard Double or Twin Room</h4>
+                            <div class="specifics">
+                                <div class="room-guest-info">
+                                    <div class="room-size">
+                                        <p class="size">Room size</p>
+                                        <span class="dimensions">25m<sup>2</sup></span>
+                                    </div>
+                                    <div class="guests-info">
+                                        <p class="guests">Guests</p>
+                                        <span class="no-of-guest">02</span>
+                                    </div>
+                                </div>
+                                <div class="additional-info">
+                                    <a href="#" class="read-more">Read more</a>
+                                    <img src="images/icons/down-chevron%20copy%208@1x.svg" alt="arrow-right">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="room">
+                    <div class="left-border"></div>
+                    <div class="single-block">
+                        <div class="img-wrap">
+                            <img src="images/17417099.jpg" alt="room-photo">
+                        </div>
+                        <div class="room-info">
+                            <h4 class="room-title">Standard Double or Twin Room</h4>
+                            <div class="specifics">
+                                <div class="room-guest-info">
+                                    <div class="room-size">
+                                        <p class="size">Room size</p>
+                                        <span class="dimensions">25m<sup>2</sup></span>
+                                    </div>
+                                    <div class="guests-info">
+                                        <p class="guests">Guests</p>
+                                        <span class="no-of-guest">02</span>
+                                    </div>
+                                </div>
+                                <div class="additional-info">
+                                    <a href="#" class="read-more">Read more</a>
+                                    <img src="images/icons/down-chevron%20copy%208@1x.svg" alt="arrow-right">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="room">
+                    <div class="left-border"></div>
+                    <div class="single-block">
+                        <div class="img-wrap">
+                            <img src="images/17417254.jpg" alt="room-photo">
+                        </div>
+                        <div class="room-info">
+                            <h4 class="room-title">Standard Double or Twin Room</h4>
+                            <div class="specifics">
+                                <div class="room-guest-info">
+                                    <div class="room-size">
+                                        <p class="size">Room size</p>
+                                        <span class="dimensions">25m<sup>2</sup></span>
+                                    </div>
+                                    <div class="guests-info">
+                                        <p class="guests">Guests</p>
+                                        <span class="no-of-guest">02</span>
+                                    </div>
+                                </div>
+                                <div class="additional-info">
+                                    <a href="#" class="read-more">Read more</a>
+                                    <img src="images/icons/down-chevron%20copy%208@1x.svg" alt="arrow-right">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="right-side">
+        <div class="img-wrap">
+            <img src="images/17417173.jpg" alt="room">
+        </div>
+            <div class="room-features">
+                <p id="room-features-desc">This room has the following:</p>
+                <div class="icons">
+                    <div class="feature">
+                        <img src="images/icons/wifi@1x.svg" alt="wifi">
+                        <p class="feature-text">Wi-Fi</p>
+                    </div>
+                    <div class="feature">
+                        <img src="images/icons/television@1x.svg" alt="television">
+                        <p class="feature-text">Television</p>
+                    </div>
+                    <div class="feature">
+                        <img src="images/icons/bathtub@1x.svg" alt="bath">
+                        <p class="feature-text">Bath</p>
+                    </div>
+                    <div class="feature">
+                        <img src="images/icons/safebox@1x.svg" alt="safe-box">
+                        <p class="feature-text">Safe box</p>
+                    </div>
+                </div>
+                <a href="#" id="book-now">Book now</a>
+            </div>
+    </div>
+    </div>
+</section>
+<section id="homepage-block-3">
+    <div class="wrapper">
+        <div class="titles">
+            <p class="title">We offer a range of</p>
+            <div class="title-line">
+                <div class="line"></div>
+                <h5 class="main-title">Special offers and services</h5>
+            </div>
+        </div>
+        <div class="content odd first">
+            <div class="text">
+                <div class="topic">
+                    <p class="category">Fitness</p>
+                    <h6 class="topic-title">A fully equipped gym</h6>
+                </div>
+                <p class="description">In the heart of the French Alps, in the north east of the Rhone Alps region lies the village of Les Houches. Nestled at one end of the Chamonix valley in the Mont Blanc region of the Haute Savoie. In the north east of region lies the village of Les Houches. Nestled at one end of the Chamonix valley in the Mont Blanc region.  In the heart of the French Alps. In the heart of the French Alps, in the north east of the Rhone Alps lies the village.</p>
+            </div>
+            <div class="image-wrap">
+                <img src="images/03-active-activity-adult-863926.jpg" alt="active-activity">
+            </div>
+        </div>
+        <div class="content even">
+            <div class="image-wrap">
+                <img src="images/02-two-young-people-writing-and-talking-on-business-PLDBMSX.jpg" alt="business-talking">
+            </div>
+            <div class="text">
+                <div class="topic">
+                    <p class="category">business</p>
+                    <h6 class="topic-title">Four conference halls</h6>
+                </div>
+                <p class="description">In the heart of the French Alps, in the north east of the Rhone Alps region lies the village of Les Houches. Nestled at one in the Mont Blanc region of the Haute Savoie. In the heart of the French Alps. In the heart of the French Alps, in the Mont Blanc region.  In the heart of the French Alps. In the heart of the French Alps, in the north east of the Rhone Alps region lies the village.<br><br>
+                    In the heart of the French Alps, in the north east of the Rhone Alps region lies the village of Les Houches. Nestled at one end of the Chamonix valley in the Mont Blanc region of the Haute Savoie. In the heart of the French Alps. In the heart of the French Alps, in the north east of the Rhone Alps region lies the village of Les Houches. </p>
+                <div class="read-more">
+                    <div class="line"></div>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+        </div>
+        <div class="content odd">
+            <div class="text">
+                <div class="topic">
+                    <p class="category">HEALTH</p>
+                    <h6 class="topic-title">A relaxing sauna</h6>
+                </div>
+                <p class="description">In the heart of the French Alps, in the north east of the Rhone Alps region lies the village of Les Houches. Nestled at one end of the Chamonix valley in the Mont Blanc region of the Haute Savoie. In the heart of the French Alps. In the heart of the French Alps, in the north east of the Rhone Alps region lies the village of Les Houches. Nestled at one end of the Chamonix valley in the Mont Blanc region.  In the heart of the French Alps.<br><br>
+                    In the heart of the French Alps, in the north east of the Rhone Alps region lies the village.  In the heart of the French Alps, in the north east of the Rhone Alps region lies the village. Nestled at one end of the Chamonix valley in the Mont Blanc region.  In the heart of the French Alps.</p>
+            </div>
+            <div class="image-wrap">
+                <img src="images/02-pool-3001208_1920.jpg" alt="pool">
+            </div>
+        </div>
+        <div class="content even">
+            <div class="image-wrap">
+                <img src="images/15010574 copy.jpg" alt="cafe">
+            </div>
+            <div class="text">
+                <div class="topic">
+                    <p class="category">food</p>
+                    <h6 class="topic-title">Restaurant Perfect</h6>
+                </div>
+                <p class="description">In the heart of the French Alps, in the north east of the Rhone Alps region lies the village of Les Houches. Nestled at one end of the Chamonix valley in the Mont Blanc region of the Haute Savoie. In the north east of region lies the village of Les Houches. Nestled at one end of the Chamonix valley in the Mont Blanc region.  In the heart of the French Alps. In the heart of the French Alps, in the north east of the Rhone Alps lies the village.</p>
+                <div class="read-more">
+                    <div class="line"></div>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="homepage-block-4">
+    <div class="background">
+        <div class="wrapper">
+            <div class="left-side">
+                <div class="line"></div>
+                <div class="titles">
+                    <p class="type">Feedback</p>
+                    <h6 class="main-title">Happy visitors had this to say about their stay</h6>
+                </div>
+                <p class="description">In the heart of the French Alps, in the north east of the Rhone Alps region lies the village of Les Houches. Nestled at one end of the Chamonix valley in the Mont Blanc region of the Haute Savoie.</p>
+            </div>
+            <div class="center">
+                <div class="single-review">
+                    <div class="person-info">
+                        <div class="avatar">
+                            <span class="avatar-letter">A</span>
+                        </div>
+                        <p class="name">Andrew</p>
+                        <p class="country">United Kingdom</p>
+                    </div>
+                    <div class="persons-review">
+                        <p class="title">“Modern hotel, 15 minutes from centre”</p>
+                        <p class="description">Clean, modern, air conditioned, hotel. Good bus connections to bus/train stations and suburban attractions.</p>
+                    </div>
+                    <div class="score">
+                        <span class="value">9.2</span>
+                    </div>
+                </div>
+                <div class="single-review">
+                    <div class="person-info">
+                        <div class="avatar">
+                            <span class="avatar-letter">J</span>
+                        </div>
+                        <p class="name">Jennifer</p>
+                        <p class="country">Poland</p>
+                    </div>
+                    <div class="persons-review">
+                        <p class="title">“Good value in beautiful Vilnius”</p>
+                        <p class="description">Good sized room and bathroom, with big windows and comfortable beds. The staff accommodated my request to change to a different room on a higher floor. The location is probably good  for people arriving by car due to proximity to highway, but also fine for walking to the main sights!</p>
+                    </div>
+                    <div class="score">
+                        <span class="value">8.8</span>
+                    </div>
+                </div>
+                <div class="single-review">
+                    <div class="person-info">
+                        <div class="avatar">
+                            <span class="avatar-letter">C</span>
+                        </div>
+                        <p class="name">Chris</p>
+                        <p class="country">Spain</p>
+                    </div>
+                    <div class="persons-review">
+                        <p class="title">“Home from home in Vilnius”</p>
+                        <p class="description">Check in faultless. Staff spoke good English and were extremely helpful. Room was clean, quiet, a nice temperature and the bed was comfortable. BBC world news and several other English speaking channels were available on the TV.
+                            Food in the restaurant was very nice and reasonably priced, and the staff were again very helpful, friendly and all spoke good English. I did not feel the need to leave the hotel to find a place to eat after a days work, which was great.</p>
+                    </div>
+                    <div class="score">
+                        <span class="value">9.2</span>
+                    </div>
+                </div>
+                <div class="single-review">
+                    <div class="person-info">
+                        <div class="avatar">
+                            <span class="avatar-letter">A</span>
+                        </div>
+                        <p class="name">Andrew</p>
+                        <p class="country">United Kingdom</p>
+                    </div>
+                    <div class="persons-review">
+                        <p class="title">“Modern hotel, 15 minutes from centre”</p>
+                        <p class="description">Clean, modern, air conditioned, hotel. Good bus connections to bus/train stations and suburban attractions.</p>
+                    </div>
+                    <div class="score">
+                        <span class="value">9.2</span>
+                    </div>
+                </div>
+                <div class="single-review">
+                    <div class="person-info">
+                        <div class="avatar">
+                            <span class="avatar-letter">A</span>
+                        </div>
+                        <p class="name">Andrew</p>
+                        <p class="country">United Kingdom</p>
+                    </div>
+                    <div class="persons-review">
+                        <p class="title">“Modern hotel, 15 minutes from centre”</p>
+                        <p class="description">Clean, modern, air conditioned, hotel. Good bus connections to bus/train stations and suburban attractions.</p>
+                    </div>
+                    <div class="score">
+                        <span class="value">9.2</span>
+                    </div>
+                </div>
+            </div>
+            <div class="right-side">
+                <img src="images/icons/down-chevron%20copy%207@1x.svg" alt="arrow">
+                <p class="info-for-user">Hover over a card to stop and read it</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="wrapper">
+        <div class="left-side">
+            <img class="europa-logo" src="images/Group%204%20Copy%203@2x.png" alt="europa-logo">
+            <p>&copy;Copyright 2018</p>
+            <p>Made by Mancanweb</p>
+        </div>
+        <div class="right-side">
+            <div class="services footer-nav">
+                <p class="title">Services</p>
+                <nav class="navigation">
+                    <ul>
+                        <li><a href="#">Rooms</a></li>
+                        <li><a href="#">Restaurant</a></li>
+                        <li><a href="#">Conference Rooms</a></li>
+                        <li><a href="#">Hotel Offers</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="about footer-nav">
+                <p class="title">About</p>
+                <nav class="navigation">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="contacts.html">Contacts</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="find-us footer-nav">
+                <p class="title">Find us</p>
+                <nav class="navigation">
+                    <ul>
+                        <li><a href="#">TripAdvisor</a></li>
+                        <li><a href="#">Facebook</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="mobile-bottom-side">
+            <img src="images/Group%204%20Copy%203@2x.png" alt="europa-logo">
+            <p>&copy;Copyright 2018</p>
+            <p>Made by Mancanweb</p>
+        </div>
+    </div>
+</footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="js/datepicker/daterangepicker.js"></script>
+    <script src="js/home-scripts.js"></script>
+    <script src="js/general-scripts.js"></script>
+</body>
+</html>

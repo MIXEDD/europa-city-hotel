@@ -1,0 +1,87 @@
+
+@mixin appearance() {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+@mixin max($maxWidth) {
+	@media only screen and (max-width: $maxWidth) {
+		@content;
+	}
+}
+
+@mixin min($minWidth) {
+	@media only screen and (min-width: $minWidth) {
+		@content;
+	}
+}
+
+@mixin flex(){
+	display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+	display: -ms-flexbox;  /* TWEENER - IE 10 */
+	display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+	display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+}
+
+@mixin justifyContentSB(){
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+}
+
+@mixin justifyContentParam($param){
+	-webkit-justify-content: $param;
+	justify-content: $param;
+}
+
+@mixin flex-direction($param){
+	-webkit-flex-direction: $param;
+	flex-direction: $param;
+}
+
+
+@mixin alignItemsCenter(){
+	-webkit-align-items: center; /* Safari 7.0+ */
+	-ms-flex-align:center;
+	align-items: center;
+}
+
+@mixin max($maxWidth) {
+	@media only screen and (max-width: $maxWidth) {
+		@content;
+	}
+}
+
+@mixin min($minWidth) {
+	@media only screen and (min-width: $minWidth) {
+		@content;
+	}
+}
+
+@mixin placeholder($colour,$opacity){
+    &::placeholder{
+      color: $colour;
+      opacity: $opacity;
+    }
+    &:-ms-input-placeholder{
+      color: $colour;
+    }
+    &::-ms-input-placeholder {
+      color: $colour;
+    }
+}
+
+@mixin removeMsExpand(){
+    &::-ms-expand {
+      display: none;
+    }
+}
+
+@mixin transition($sec){
+    transition: all $sec;
+}
+
+@mixin transformRotate($deg,$a,$b){
+	-webkit-transform: rotate($deg) translate($a, $b);
+	transform: rotate($deg) translate($a, $b);
+}
